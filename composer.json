@@ -1,0 +1,36 @@
+{
+    "name": "bond/dependency-injection",
+    "type": "library",
+    "description": "Symfony's Dependency Injection Extensions",
+    "keywords": ["Di", "Symfony", "DependencyInjection", "Dependency Injection"],
+    "homepage": "captaincourier.org",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Joseph",
+            "email": "joseph@captaincourier.org"
+        },
+        {
+            "name": "Peter",
+            "homepage": "peter@captaincourier.org"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "symfony/dependency-injection": "*",
+        "symfony/proxy-manager-bridge": "*",
+        "symfony/yaml": "*",
+        "symfony/config": "*"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "process-timeout": 5000
+    }
+}
