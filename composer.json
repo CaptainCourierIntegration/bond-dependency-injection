@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Symfony's Dependency Injection Extensions",
     "keywords": ["Di", "Symfony", "DependencyInjection", "Dependency Injection"],
-    "homepage": "captaincourier.org",
+    "homepage": "http://captaincourier.org",
     "license": "AGPL-3.0",
     "authors": [
         {
