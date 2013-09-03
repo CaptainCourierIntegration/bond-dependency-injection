@@ -8,11 +8,13 @@
     "authors": [
         {
             "name": "Joseph",
-            "email": "joseph@captaincourier.org"
+            "email": "joseph@captaincourier.org",
+            "role": "Developer"
         },
         {
             "name": "Peter",
-            "homepage": "peter@captaincourier.org"
+            "email": "peter@captaincourier.org",
+            "role": "Developer"
         }
     ],
     "autoload": {
