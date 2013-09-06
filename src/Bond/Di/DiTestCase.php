@@ -30,6 +30,8 @@ abstract class DiTestCase extends \PHPUnit_Framework_Testcase
 
         $diHelper = self::getContainerFromAnnotations();
 
+        $container = $diHelper->getContainer();
+
         // check service namee
         if( !$serviceName = $this->getServiceName($diHelper) ) {
             // does this container have a service defined with this class name?
@@ -42,12 +44,12 @@ abstract class DiTestCase extends \PHPUnit_Framework_Testcase
                 }
                 $r = $r->getParentClass();
             }
-            if( !$serviceName ) {
-                throw new NoServiceDefinedException($reflector);
+
+            if(!$serviceName) {
+                return $container;
             }
         }
 
-        $container = $diHelper->getContainer();
         $clone = $container->get($serviceName);
 
         foreach ($diHelper->reflector->getProperties() as $property) {
